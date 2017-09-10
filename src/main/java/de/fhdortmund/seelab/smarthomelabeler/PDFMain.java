@@ -1,7 +1,8 @@
 package de.fhdortmund.seelab.smarthomelabeler;
 
 
-import sun.security.krb5.internal.crypto.Des;
+import de.fhdortmund.seelab.smarthomelabeler.Controller.PDFCreator;
+import de.fhdortmund.seelab.smarthomelabeler.Model.Smarthomeitem;
 
 import java.awt.*;
 import java.io.File;

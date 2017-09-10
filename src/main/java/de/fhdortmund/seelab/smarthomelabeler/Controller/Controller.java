@@ -1,8 +1,7 @@
 package de.fhdortmund.seelab.smarthomelabeler.Controller;
 
 import com.google.gson.Gson;
-import de.fhdortmund.seelab.smarthomelabeler.PDFCreator;
-import de.fhdortmund.seelab.smarthomelabeler.Smarthomeitem;
+import de.fhdortmund.seelab.smarthomelabeler.Model.Smarthomeitem;
 import javafx.fxml.FXML;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TableView;
@@ -33,7 +32,6 @@ public class Controller {
 
     @FXML
     public void initialize() {
-        System.out.println("Test");
         itemView.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
     }
 

@@ -1,4 +1,4 @@
-package de.fhdortmund.seelab.smarthomelabeler;
+package de.fhdortmund.seelab.smarthomelabeler.Model;
 
 import javafx.beans.property.SimpleStringProperty;
 
