@@ -33,12 +33,12 @@ public class PDFCreator {
         try (final PDDocument document = new PDDocument())
         {
             for(Smarthomeitem item : smarthomeitems) {
-                final PDPage singlePage = new PDPage(new PDRectangle(56f * mm, 56f * mm));
+                final PDPage singlePage = new PDPage(new PDRectangle(62f * mm, 62f * mm));
                 document.addPage(singlePage);
                 final PDPageContentStream contentStream = new PDPageContentStream(document, singlePage);
                 String json = FxGson.create().toJson(item);
                 BufferedImage qr = createQRImage(json, 250);
-                contentStream.drawImage(JPEGFactory.createFromImage(document, qr), 2*mm, 2*mm, 52*mm, 52 * mm);
+                contentStream.drawImage(JPEGFactory.createFromImage(document, qr), 2*mm, 2*mm, 60*mm, 60 * mm);
                 contentStream.beginText();
                 contentStream.setFont(PDType1Font.HELVETICA, 8);
                 contentStream.newLineAtOffset(2* mm, 2* mm);
